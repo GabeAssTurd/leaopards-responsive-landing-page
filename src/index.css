@@ -1,0 +1,140 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hover-linkedin {
+    @apply hover:text-[#0077B5] transition duration-200;
+  }
+  
+  .hover-facebook {
+    @apply hover:text-[#1877F2] transition duration-200;
+  }
+
+  .hover-instagram {
+    @apply hover:text-transparent bg-gradient-to-r from-[#F58529] via-[#DD2A7B] to-[#515BD4] bg-clip-text transition duration-200;
+  }
+
+  .hover-whatsapp {
+    @apply hover:text-[#25D366] transition duration-200;
+  }
+
+  .hover-youtube {
+    @apply hover:text-[#FF0000] transition duration-200;
+  }
+}
+
+:root{
+    --yellow: #ffcb05; 
+    --half-balck:#000000a3;
+    --gray : #444444
+}
+
+.mobile-nav-pe{
+position: fixed;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.open-nav{
+  -webkit-animation: scale-in-ver-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-ver-top 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+@keyframes scale-in-ver-top {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    -webkit-transform-origin: 100% 0%;
+            transform-origin: 100% 0%;
+    opacity: 1;
+  }
+}
+
+.SerACH-cARDs{
+  /* background: #000; */
+  background: linear-gradient(45deg, 
+    rgba(226, 226, 226, 0.9) 0%, 
+    rgba(219, 219, 219, 0.95) 50%, 
+    rgba(209, 209, 209, 0.95) 51%, 
+    rgba(254, 254, 254, 1) 100%
+  );
+}
+
+.SerACH-cARDs:hover{
+  background: linear-gradient(45deg, rgba(27, 27, 27, 0.8) 0%, rgba(56, 56, 56, 0.8) 13%, rgba(78, 78, 78, 0.8) 24%, rgba(13, 13, 13, 0.8) 46%, rgba(1, 1, 1, 0.8) 50%, rgba(10, 10, 10, 0.8) 53%, rgba(78, 78, 78, 0.8) 76%, rgba(56, 56, 56, 0.8) 87%, rgba(27, 27, 27, 0.8) 100%);
+}
+
+
+
+@media (max-width: 1000px) {
+  .Hero-search-div {
+    display: none !important;
+  }
+  .Hero-search-div{
+    display: block;
+  }
+.mobie-nav-btn{
+  display: flex;
+}
+.Desktop-nav-bar{
+  display: none;
+}
+}
+@media (min-width: 1001px) {
+  .Hero-search-div {
+    display: flex !important;
+  }
+  .Hero-search-div{
+    display: none
+  }
+  .mobie-nav-btn{
+    display: none;
+
+  }
+  .Desktop-nav-bar{
+    display: block;
+  }
+
+}
+
+
+.items-card-title-div > div{
+  display: block;
+  background-color:var(--yellow);
+  animation: anim .3s linear;
+}
+
+@keyframes anim {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: inherit;
+  }
+  
+}
